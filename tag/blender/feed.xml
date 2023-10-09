@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" >
+  <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
+  <link href="https://qkrwldns.github.io//tag/blender/feed.xml" rel="self" type="application/atom+xml" />
+  <link href="https://qkrwldns.github.io//" rel="alternate" type="text/html" />
+  <updated>2023-10-09T14:57:33+09:00</updated>
+  <id>https://qkrwldns.github.io//tag/blender/feed.xml</id>
+
+  
+  
+  
+
+  
+    <title type="html">BCEWIGILC | </title>
+  
+
+  
+    <subtitle>공부할겸 정리하는 블로그</subtitle>
+  
+
+  
+
+  
+    
+      
+    
+  
+
+  
+  
+
+  
+    <entry>
+      <title type="html">blender</title>
+      <link href="https://qkrwldns.github.io//blender" rel="alternate" type="text/html" title="blender" />
+      <published>2023-10-07T18:00:00+09:00</published>
+      <updated>2023-10-07T18:00:00+09:00</updated>
+      <id>https://qkrwldns.github.io//blender</id>
+      <content type="html" xml:base="https://qkrwldns.github.io//blender">&lt;p&gt;이 글은 파이썬 언어를 공부하기 위한 글입니다.!&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>qkrwldns</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="blender" />
+      
+
+      
+        <summary type="html">이 글은 파이썬 언어를 공부하기 위한 글입니다.!</summary>
+      
+
+      
+      
+    </entry>
+  
+</feed>

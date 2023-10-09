@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title> - Articles</title>
+    <description>공부할겸 정리하는 블로그</description>
+    <link>
+    https://qkrwldns.github.io/</link>
+    
+      
+      <item>
+        <title>python project udemy</title>
+        
+          <description>&lt;div class=&quot;table-of-contents-list&quot;&gt;목차&lt;/div&gt;
+
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./language-python&quot;&gt;python udemy def 문법&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./language-python-control-statement&quot;&gt;python project udemy&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        
+        <pubDate>Sun, 08 Oct 2023 18:00:00 +0900</pubDate>
+        <link>
+        https://qkrwldns.github.io//language-python-control-statement</link>
+        <guid isPermaLink="true">https://qkrwldns.github.io//language-python-control-statement</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>python udemy def 문법</title>
+        
+          <description>&lt;div class=&quot;table-of-contents-list&quot;&gt;목차&lt;/div&gt;
+
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./language-python&quot;&gt;python udemy def 문법&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./language-python-control-statement&quot;&gt;python project udemy&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        
+        <pubDate>Sat, 07 Oct 2023 18:00:00 +0900</pubDate>
+        <link>
+        https://qkrwldns.github.io//language-python</link>
+        <guid isPermaLink="true">https://qkrwldns.github.io//language-python</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>coding</title>
+        
+          <description>&lt;p&gt;이 글은 코딩테스트 공부하기 위한 글입니다.!&lt;/p&gt;
+</description>
+        
+        <pubDate>Sat, 07 Oct 2023 18:00:00 +0900</pubDate>
+        <link>
+        https://qkrwldns.github.io//conding-test</link>
+        <guid isPermaLink="true">https://qkrwldns.github.io//conding-test</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>blender</title>
+        
+          <description>&lt;p&gt;이 글은 파이썬 언어를 공부하기 위한 글입니다.!&lt;/p&gt;
+</description>
+        
+        <pubDate>Sat, 07 Oct 2023 18:00:00 +0900</pubDate>
+        <link>
+        https://qkrwldns.github.io//blender</link>
+        <guid isPermaLink="true">https://qkrwldns.github.io//blender</guid>
+      </item>
+      
+    
+  </channel>
+</rss>
