@@ -16,7 +16,7 @@ timezone: Asia/Seoul
 
 title: WOON블로그 # the main title
 
-tagline: "IT관련포스팅목적 - [GitHub](https://github.com/qkrwldns)" # it will display as the sub-title
+tagline: "IT관련포스팅목적 - [GitHub] : https://github.com/qkrwldns" # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   공부 목적으로 개설하였습니다.
