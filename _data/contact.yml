@@ -3,8 +3,9 @@
 - type: github
   icon: "fab fa-github"
 
-- type: twitter
-  icon: "fa-brands fa-x-twitter"
+- type: youtube
+  icon: "fab fa-youtube"
+  url: "https://www.youtube.com/@jiwoon-jd8hh"
 
 - type: email
   icon: "fas fa-envelope"
