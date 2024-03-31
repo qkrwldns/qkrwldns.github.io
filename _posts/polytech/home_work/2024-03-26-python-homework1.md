@@ -3,7 +3,7 @@ title: python 과제 2024.03.26
 author: cotes
 date: 2024-03-26 17:33:00 +0800
 categories: [폴리텍, python]
-tags: [python]
+tags: [home work]
 pin: true
 math: true
 mermaid: true
