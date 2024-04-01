@@ -77,6 +77,6 @@ Excalidraw는 작업 효율성을 높이기 위한 다양한 단축키를 지원
   
   
   
-> 더 자세한 팁: https://csswolf.com/awesome-excalidraw-tips-and-tricks/ 
-더 많은 단축키 : https://csswolf.com/excalidraw-keyboard-shortcuts-pdf/
+> 더 자세한 팁: https://csswolf.com/awesome-excalidraw-tips-and-tricks/   
+> 더 많은 단축키 : https://csswolf.com/excalidraw-keyboard-shortcuts-pdf/
 {: .prompt-info }
