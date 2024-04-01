@@ -75,6 +75,8 @@ Excalidraw는 작업 효율성을 높이기 위한 다양한 단축키를 지원
 - **Shift + Drag**: 객체를 직선이나 정확한 각도로 이동하거나 그림.
 - **Alt + Drag (Windows) / Option + Drag (Mac)**: 선택한 객체를 이동하면서 복사 (Drag to duplicate).  
 
+https://csswolf.com/excalidraw-keyboard-shortcuts-pdf/
+
 > 더 자세한 팁: [Awesome Excalidraw Tips and Tricks](https://csswolf.com/awesome-excalidraw-tips-and-tricks/)     
 > 더 많은 단축키: [Excalidraw Keyboard Shortcuts PDF](https://csswolf.com/excalidraw-keyboard-shortcuts-pdf/)
 {: .prompt-info }
