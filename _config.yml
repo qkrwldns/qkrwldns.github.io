@@ -217,3 +217,7 @@ jekyll-archives:
     category: /categories/:name/
 # Global permalink setting
 # permalink: /:categories/:year/:month/:day/:title/
+
+# test
+plugins:
+  - jekyll-seo-tag
