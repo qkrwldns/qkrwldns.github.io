@@ -137,8 +137,8 @@ pwa:
       # - "/example"  # URLs match `<SITE_URL>/example/*` will not be cached by the PWA
 
 # Pagination
-paginate: 4
-paginate_path:      /page:num/
+paginate: 10
+paginate_path: /page:num/
 sass:
   style: compressed
 plugins:
