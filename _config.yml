@@ -137,13 +137,12 @@ pwa:
       # - "/example"  # URLs match `<SITE_URL>/example/*` will not be cached by the PWA
 
 # Pagination
-paginate: 10
-paginate_path: /page:num/
+paginate: 7
+paginate_path: "/blog/page:num/"
 sass:
   style: compressed
 plugins:
   - jekyll-paginate
-  - jekyll-sitemap
 
 # The base URL of your site
 baseurl: ""
