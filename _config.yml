@@ -138,7 +138,6 @@ pwa:
 
 # Pagination
 paginate: 7
-paginate_path: "/blog/page:num/"
 sass:
   style: compressed
 plugins:
