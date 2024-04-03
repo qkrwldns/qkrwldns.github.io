@@ -19,3 +19,11 @@ image:
     1. flask
     2. telegram
     3. mysql 
+    4. socket.io
+    5. html, css, js 
+    6. git(롤백)
+1. 로그인 페이지 구축(db연동)
+
+```py
+
+```
