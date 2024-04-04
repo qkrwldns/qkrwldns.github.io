@@ -32,7 +32,6 @@ if a < b: # 만약 a가 b보다 작다면
 ## 띠 출력
 
 ```py
-```python
 str_input = input("태어난 해를 입력해 주세요 ")
 birth_year = int(str_input)
 
