@@ -55,13 +55,10 @@ image:
 
 **오류 발생**
 
-원래 사용자 ID가 1인 사람만(관리자) 버튼을 볼 수 있게 하려고 했다. 근데 관리자인 ID 1을 가진 사람도 버튼이 안 보이는 문제가 생겼고.  
-Flask에서 print를 해보고 Jinja에서도 p 태그에current_user.id를 출력해봤는데, 1이 나왔다. 그럼에도불구하고 {{ current_user.id == 1 }}를 하니까 False가나왔다.  
-형변환이 문제일 것 같아서 관련 정보를찾아봤지만, 적절한 답을 찾지 못했다.  
-그래서 Flask에서Jinja로 형변환을 해서 넘기려고 했더니 오류가 발생했다.  
-Jinja 문법 내에서 형변환을 시도해보기로 했고,  
-Jinja에서 정수의 경우 int 필터를 사용하여 값이 정수로처리되도록 할 수 있길래 이 방법을 사용하고 조건문을걸었더니 문제가 해결되었다: {% if current_user.id|int == 1 %}
 
+원래는 사용자 ID가 1인 사람만(관리자) 버튼을 볼 수 있게 하려고 했다. 그런데 관리자인데도 ID가 1인 사람이 버튼을 못 보는 문제가 생겼다. Flask에서 print로 찍어보고 Jinja에서도 p 태그에 current_user.id를 출력해봤는데, 분명 1이 나왔다. 그런데도 {{ current_user.id == 1 }} 하니까 False가 나왔다.
+  
+형변환이 문제인 것 같아서 이리저리 찾아봤는데, 딱히 마땅한 답을 못 찾았다. 그래서 Flask에서 Jinja로 형변환을 시도해보려고 했는데, 오류가 떴다. 결국 Jinja 문법 내에서 형변환을 시도해보기로 했고, Jinja에서는 정수를 처리할 때 int 필터를 쓸 수 있다길래, 그 방법을 써서 조건문을 걸었더니 해결이 됐다: {% if current_user.id|int == 1 %}.
 
 - 관리자관점의 팀멤버 페이지
 
@@ -90,4 +87,4 @@ Jinja에서 정수의 경우 int 필터를 사용하여 값이 정수로처리�
 
 편집도 가능하다 이름을.. 이미지 url을 수정하는건 차차 구현할 생각이다
 
-![UI](./assets/img/project/t_todos/t_todos_blog_img14.png) 
+![UI](./assets/img/project/t_todos/t_todos_blog_img13.png) 
