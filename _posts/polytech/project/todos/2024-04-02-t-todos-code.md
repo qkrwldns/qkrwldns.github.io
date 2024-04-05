@@ -68,7 +68,7 @@ image:
 2. **Jinja 조건문**  
     사용자 ID가 1인 사람만(관리자) 버튼을 볼 수 있게 하려고 했으나, 관리자(ID 1)도 버튼을 볼 수 없는 문제 발생. Flask에서 `print`로 확인 및 Jinja에서 `<p>` 태그로 `current_user.id` 출력 시, 1이 정상적으로 나옴에도 불구하고 `{{ current_user.id == 1 }}` 사용 시 `False` 반환.
     형변환 문제로 추정, Jinja에서 정수 처리 시 `int` 필터 사용이 가능하여 이를 적용한 조건문 사용으로 문제 해결: 
-    liquid{% raw %}`{% if current_user.id|int == 1 %}`{% endraw %}.
+    {% raw %}`{% if current_user.id|int == 1 %}`{% endraw %}.
 
 - 관리자 관점의 팀 멤버 페이지
 
@@ -96,3 +96,6 @@ image:
 편집도 가능. 이름이나 이미지 URL 수정과 알림 기능은 차차 구현할 예정.
 
 ![UI](./assets/img/project/t_todos/t_todos_blog_img14.png)
+
+### 코드
+[t_todos git code](https://github.com/qkrwldns/t_todos)
