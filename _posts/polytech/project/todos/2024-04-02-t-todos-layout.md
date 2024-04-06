@@ -15,6 +15,10 @@ image:
 
 # T_Todos 프로젝트 
 
+## 만드는 이유
+
+개인프로젝트를 생각하다가 ict멘토링 팀 프로젝트도 있고 해서 팀원끼리 사용할 수 있으면 좋겠다고 생각이 들어서 팀 관련 웹을 만들려고 하다가 이걸 선택하게 되었다.   
+
 ## **팀원 간 협업을 위한 To-Do 리스트 애플리케이션 요구사항 명세서**
 
 ### **1. 개요**
@@ -100,32 +104,40 @@ image:
 3. Sokcet.io
 
 ## **DB**
-
 ### **1. Users Table**
 
-사용자 정보를 저장.
+| Field Name | Data Type | Constraints | Description |
+| --- | --- | --- | --- |
+| UserID | INT | PK, Auto Increment | 사용자 고유 식별자 |
+| Username | VARCHAR(50) | Unique, Not Null | 사용자 이름 |
+| Password | VARCHAR(255) | Not Null | 사용자 비밀번호 (암호화 권장) |
+| ProfilePic | VARCHAR(255) |  | 프로필 사진 URL |
+| TeamID | INT | FK to Teams.TeamID | 사용자가 속한 팀 ID |
 
-- **UserID (PK)**: **`INT`**, 자동 증가
-- **Username**: **`VARCHAR(255)`**, 고유
-- **Year**: **`INT`**, 비밀번호 대신 사용
+### **2. Teams Table**
 
-### **2. Todos Table**
-
-To-Do 항목 정보를 저장.
-
-- **TodoID (PK)**: **`INT`**, 자동 증가
-- **UserID (FK)**: **`INT`**, Users.UserID 참조
-- **Title**: **`VARCHAR(255)`**
-- **Description**: **`TEXT`**
-- **IsCompleted**: **`BOOLEAN`**
+| Field Name | Data Type | Constraints | Description |
+| --- | --- | --- | --- |
+| TeamID | INT | PK, Auto Increment | 팀 고유 식별자 |
+| TeamName | VARCHAR(50) | Not Null | 팀 이름 |
 
 ### **3. Messages Table**
 
-실시간 채팅 메시지를 저장.
+| Field Name | Data Type | Constraints | Description |
+| --- | --- | --- | --- |
+| MessageID | INT | PK, Auto Increment | 메시지 고유 식별자 |
+| UserID | INT | FK to Users.UserID | 메시지를 보낸 사용자 ID |
+| Content | TEXT | Not Null | 메시지 내용 |
+| Timestamp | DATETIME | Not Null | 메시지 전송 시간 |
 
-- **MessageID (PK)**: **`INT`**, 자동 증가
-- **UserID (FK)**: **`INT`**, Users.UserID 참조
-- **Content**: **`TEXT`**
+### **4. Todos Table**
+
+| Field Name | Data Type | Constraints | Description |
+| --- | --- | --- | --- |
+| TodoID | INT | PK, Auto Increment | 할일 고유 식별자 |
+| Title | VARCHAR(255) | Not Null | 할일 제목 |
+| IsCompleted | BOOLEAN | Not Null | 완료 여부 |
+| UserID | INT | FK to Users.UserID | 할일을 만든 사용자 ID |
 
 ## **예상 UI**
 

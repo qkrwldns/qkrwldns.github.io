@@ -20,8 +20,7 @@ image:
     2. Telegram
     3. MySQL
     4. Socket.IO
-    5. HTML, CSS, JS
-    6. Git (롤백)
+    5. Git (롤백)
 
 ## client
 
