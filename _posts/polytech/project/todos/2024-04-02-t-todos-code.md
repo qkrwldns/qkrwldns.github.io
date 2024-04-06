@@ -53,23 +53,6 @@ image:
 
 ![UI](./assets/img/project/t_todos/t_todos_blog_img5.png)
 
-**오류 발생**
-
-1. **url_for**  
-    로그인, 로그아웃 구현 시, 로그아웃하고 다시 홈으로 가기 위해 `url_for('/')`를 사용했는데 오류 발생. 로그아웃 함수 내에서 리디렉션을 정확히 처리하려면, 라우트 함수 이름을 `url_for`에 인자로 전달해야 함. `/` 경로는 이미 `login_or_register` 함수에 매핑되어 있으므로, 다음과 같이 수정하니 정상 작동됨.
-
-    ```python
-    @app.route('/logout')
-    def logout():
-        logout_user()  # 사용자 로그아웃 처리
-        return redirect(url_for('login_or_register'))  # login_or_register 함수로 리디렉션
-    ```
-
-2. **Jinja 조건문**  
-    사용자 ID가 1인 사람만(관리자) 버튼을 볼 수 있게 하려고 했으나, 관리자(ID 1)도 버튼을 볼 수 없는 문제 발생. Flask에서 `print`로 확인 및 Jinja에서 `<p>` 태그로 `current_user.id` 출력 시, 1이 정상적으로 나옴에도 불구하고 `{{ current_user.id == 1 }}` 사용 시 `False` 반환.
-    형변환 문제로 추정, Jinja에서 정수 처리 시 `int` 필터 사용이 가능하여 이를 적용한 조건문 사용으로 문제 해결: 
-    {% raw %}`{% if current_user.id|int == 1 %}`{% endraw %}.
-
 - 관리자 관점의 팀 멤버 페이지
 
 ![UI](./assets/img/project/t_todos/t_todos_blog_img6.png)
@@ -96,6 +79,24 @@ image:
 편집도 가능. 이름이나 이미지 URL 수정과 알림 기능은 차차 구현할 예정.
 
 ![UI](./assets/img/project/t_todos/t_todos_blog_img14.png)
+
+**오류 발생**
+
+1. **url_for**  
+    로그인, 로그아웃 구현 시, 로그아웃하고 다시 홈으로 가기 위해 `url_for('/')`를 사용했는데 오류 발생. 로그아웃 함수 내에서 리디렉션을 정확히 처리하려면, 라우트 함수 이름을 `url_for`에 인자로 전달해야 함. `/` 경로는 이미 `login_or_register` 함수에 매핑되어 있으므로, 다음과 같이 수정하니 정상 작동됨.
+
+    ```python
+    @app.route('/logout')
+    def logout():
+        logout_user()  # 사용자 로그아웃 처리
+        return redirect(url_for('login_or_register'))  # login_or_register 함수로 리디렉션
+    ```
+
+2. **Jinja 조건문**  
+    사용자 ID가 1인 사람만(관리자) 버튼을 볼 수 있게 하려고 했으나, 관리자(ID 1)도 버튼을 볼 수 없는 문제 발생. Flask에서 `print`로 확인 및 Jinja에서 `<p>` 태그로 `current_user.id` 출력 시, 1이 정상적으로 나옴에도 불구하고 `{{ current_user.id == 1 }}` 사용 시 `False` 반환.
+    형변환 문제로 추정, Jinja에서 정수 처리 시 `int` 필터 사용이 가능하여 이를 적용한 조건문 사용으로 문제 해결: 
+    {% raw %}`{% if current_user.id|int == 1 %}`{% endraw %}.
+
 
 ### 코드
 [t_todos git code](https://github.com/qkrwldns/t_todos)
