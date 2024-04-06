@@ -1,5 +1,5 @@
 ---
-title: "t_todos project 구현"
+title: "t_todos project (구현)"
 author: cotes
 date: 2024-04-02 06:33:00 +0800
 categories: [project, personal]
