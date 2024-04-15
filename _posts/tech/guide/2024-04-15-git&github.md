@@ -22,7 +22,7 @@ image:
 - 저장소를 생성한다.   
    
 <img src="https://i.ibb.co/Xzg5g57/image.png" alt="image" border="0">  
-
+  
 - 팀원 초대를 한다.(Add collaborators ... > Add people > 팀원 이름이나 이메일 입력)
   
 <img src="https://i.ibb.co/JrGxr54/image.png" alt="image" border="0">    
@@ -82,7 +82,8 @@ todo에 있는걸 in progress로 드래그앤드롬해서 feature A이거를 옮
 
 해야하는 개발에 따라 브랜치 생성을 할 수 있음. 각각의 개발 리스트가 어떤 브랜치랑 연결되어있는지 확인이 가능.  
 
-<img src="https://i.ibb.co/7gSH3J5/image.png" alt="image" border="0"> 
+<img src="https://i.ibb.co/7gSH3J5/image.png" alt="image" border="0">  
+  
 feature A의 브랜치는 개인 연습장이라고 생각하면 됨 
 <img src="https://i.ibb.co/NCskMNN/image.png" alt="image" border="0">  
 
