@@ -19,22 +19,22 @@ image:
 
 ### 팀리더
 
-1. 저장소를 생성한다.   
+- 저장소를 생성한다.   
    
 <img src="https://i.ibb.co/Xzg5g57/image.png" alt="image" border="0">  
 
-2. 팀원 초대를 한다.(Add collaborators ... > Add people > 팀원 이름이나 이메일 입력)
+- 팀원 초대를 한다.(Add collaborators ... > Add people > 팀원 이름이나 이메일 입력)
   
 <img src="https://i.ibb.co/JrGxr54/image.png" alt="image" border="0">    
 <img src="https://i.ibb.co/jGP9ChL/image.png" alt="image" border="0">
 
-3. 로컬에서 프로젝트를 만든다. (폴더 생성 > git init > git add . > git commit -m "first commit" > git remote add origin [저장소 주소] > git branch -M main > git push origin main)  
+- 로컬에서 프로젝트를 만든다. (폴더 생성 > git init > git add . > git commit -m "first commit" > git remote add origin [저장소 주소] > git branch -M main > git push origin main)  
 
 <img src="https://i.ibb.co/0Kt0Gtg/image.png" alt="image" border="0">
 
 그러면 이제 push 된 파일인 index.html이 보인다.
 
-4. 브랜치를 하나 더 만든다. (main의 복사본, main은 실제 돌아가는 웹이라면 다른 브랜치는 이제 리더가 코드들을 확인하고 병합시켜주는 용도, main은 완벽한 코드만 올려야함)
+- 브랜치를 하나 더 만든다. (main의 복사본, main은 실제 돌아가는 웹이라면 다른 브랜치는 이제 리더가 코드들을 확인하고 병합시켜주는 용도, main은 완벽한 코드만 올려야함)
 
 git checkout -b dev 
    
@@ -55,7 +55,7 @@ main브랜치에 코드를 막 push하고 수정 할 수 없도록 막아야한�
 
 사진의 체크 박스 두개를 체크한다.
 
-5. actions 옆의 projects를 클릭 
+- actions 옆의 projects를 클릭 
 
 <img src="https://i.ibb.co/H4CkDGF/image.png" alt="image" border="0">  
 
@@ -102,23 +102,23 @@ copy아이콘 밑에 change branch source를 클릭 > main이 아닌 dev에서 �
 
 ### 팀원
 
-1. 팀리더의 저장소를 clone해옴.  
+- 팀리더의 저장소를 clone해옴.  
 (git clone https://github.com/qkrwldns/team.git)
 
-2. 열면 main 브랜치 코드가 그대로 존재.
+- 열면 main 브랜치 코드가 그대로 존재.
 
-3. 저장소의 프로젝트에 가서 feature B를 클릭하고 컨벌트 한뒤 위의 순서대로 브랜치 하나 생성 feature B 로. (dev로부터 가져오기)
+- 저장소의 프로젝트에 가서 feature B를 클릭하고 컨벌트 한뒤 위의 순서대로 브랜치 하나 생성 feature B 로. (dev로부터 가져오기)
 
-4. 명령어 복사해서 clone 한 프로젝트의 터미널에 붙여넣기 
+- 명령어 복사해서 clone 한 프로젝트의 터미널에 붙여넣기 
 
-5. 그럼 이제 브랜치가 feature B라는 브랜치가 되고 거기서 작업이 가능 
+- 그럼 이제 브랜치가 feature B라는 브랜치가 되고 거기서 작업이 가능 
 
-6. 코드를 고치고 작업올리기.(git add . > git commit -m "feature B" > git push)
+- 코드를 고치고 작업올리기.(git add . > git commit -m "feature B" > git push)
 
-7. 깃허브의 저장소로 가서 브랜치를 보면 main, dev, feature A, feature B가 존재함.  
+- 깃허브의 저장소로 가서 브랜치를 보면 main, dev, feature A, feature B가 존재함.  
 feature B로 변경하고 파일을 클릭하면 방금 팀원이 push한 코드가 들어있음 
 
-8. 이제 방금 push한걸 dev브랜치로 보낼거임 (풀리퀘스트(PR) 만들기)
+- 이제 방금 push한걸 dev브랜치로 보낼거임 (풀리퀘스트(PR) 만들기)
 
 <img src="https://i.ibb.co/ng75Tpj/image.png" alt="image" border="0">  
 여기 오른쪽 초록 버튼 클릭
@@ -137,7 +137,7 @@ feature A로 되어있지만 feature B라는 가정. 위에 B에서 dev로 보�
 
 ### 팀리더 
 
-1. 이제 스크럼 마스터가 저기 checks옆에 files changed를 클릭해서 뭐가 바뀌었는지 확인 
+- 이제 스크럼 마스터가 저기 checks옆에 files changed를 클릭해서 뭐가 바뀌었는지 확인 
 <img src="https://i.ibb.co/F4TRPXX/image.png" alt="image" border="0">    
 <img src="https://i.ibb.co/t81KSMT/image.png" alt="image" border="0">  
 파란 버튼 클릭후 메세지 작성 후 초록버튼 
@@ -145,7 +145,7 @@ feature A로 되어있지만 feature B라는 가정. 위에 B에서 dev로 보�
 코드가 괜찮다면 오른쪽에 피니쉬 리뷰 클릭후 approve체크 후 submit하기(이 코드는 문제없다 dev보내자) 만약 request changes를 체크하고 submit하면 이 코드 좀 아닌것같아 처음부터 다시해 이런거   이렇게 되면 그 코드는 dev에 보낼 수 없음 막은 팀장이나 팀원한테 가서 사정사정해야함   
 <img src="https://i.ibb.co/f0xNySt/image.png" alt="image" border="0">
 
-2. 팀원이 다시 a로 바꿔서 add . > commit -m > push 했음 
+- 팀원이 다시 a로 바꿔서 add . > commit -m > push 했음 
 <img src="https://i.ibb.co/C9V0x9v/image.png" alt="image" border="0">
 그럼 다시 코드가 바뀌게 (리뷰했던것도 사라짐. 코드가 바꼈기 때문)
 <img src="https://i.ibb.co/4sh44xY/image.png" alt="image" border="0">
@@ -153,7 +153,7 @@ feature A로 되어있지만 feature B라는 가정. 위에 B에서 dev로 보�
 <img src="https://i.ibb.co/L0PVFKm/image.png" alt="image" border="0">
 이런식으로 승인했다고 됨(팀원들(팀리더)이 코드 리뷰)  
 
-2. 승인 받은 코드 팀원이 병합하기
+- 승인 받은 코드 팀원이 병합하기
 <img src="https://i.ibb.co/RvxQ4M8/image.png" alt="image" border="0">
 그럼 이렇게 병합됐다고 뜸 보라색으로.
 다시 프로젝트 저장소에 가서 dev로 감  
