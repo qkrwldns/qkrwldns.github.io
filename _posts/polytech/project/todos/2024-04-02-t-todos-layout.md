@@ -3,7 +3,7 @@ title: t_todos project (개요)
 author: cotes
 date: 2024-04-02 06:33:00 +0800
 categories: [project, personal]
-tags: [personal]
+tags: [personal project]
 pin: true
 math: true
 mermaid: true
