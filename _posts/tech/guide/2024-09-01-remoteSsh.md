@@ -62,3 +62,5 @@ ssh -v 보니까 OpenSSH 버전이 매우 오래된 버전(OpenSSH_5.4p1)이라�
    ``` 
 3. 성공
    ![완료사진](./assets/img/posts/guide/remoteSshDone.png)
+
+더 자세한건 개인노션에 리눅스 / vscode에 있음. 
